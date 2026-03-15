@@ -29,6 +29,9 @@ const DeerDashboard = () => {
           type="number" 
           value={inputValue} 
           onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={(e) => e.stopPropagation()} 
+          onKeyUp={(e) => e.stopPropagation()}
+          onKeyPress={(e) => e.stopPropagation()}
           min="0"
           max="100"
           style={{ padding: "8px", width: "100px", marginRight: "10px", borderRadius: "4px", border: "1px solid #ccc" }}
