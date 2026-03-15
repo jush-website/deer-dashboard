@@ -85,7 +85,7 @@ const DeerDashboard = () => {
               transition: "background 0.3s"
             }}
           >
-            {isPredicting ? "⏳ AI 模型運算中... 正在接收數據" : "🤖 模擬接收最新 AI 預測數據"}
+            {isPredicting ? "x取亂數中" : "取得亂數數值"}
           </button>
         </div>
 
